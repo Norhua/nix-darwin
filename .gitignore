@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Nix build outputs
+result
+result-*
+repl-result
+
+# Local development state
+.direnv/
+.cache/
+.vscode/
+.idea/
+*.log
+*.tmp
+tmp/
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.crt
+*.csr
+*.mobileprovision
