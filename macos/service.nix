@@ -11,20 +11,22 @@ in
 
   environment.systemPackages = with pkgs; [
     stable.easytier
-    sunshine
+    # sunshine
     mihomo
   ];
 
-  launchd.user.agents.sunshine = {
-    command = "${pkgs.sunshine}/bin/sunshine";
-
-    serviceConfig = {
-      RunAtLoad = true;
-      # KeepAlive = true;
-      StandardOutPath = "${homeDir}/Library/Logs/sunshine/sunshine.log";
-      StandardErrorPath = "${homeDir}/Library/Logs/sunshine/sunshine.err.log";
-    };
-  };
+  # # nixpkg sunshine
+  # launchd.user.agents.sunshine = {
+  #   command = "${pkgs.sunshine}/bin/sunshine";
+  #
+  #   serviceConfig = {
+  #     RunAtLoad = true;
+  #     # KeepAlive = true;
+  #     StandardOutPath = "${homeDir}/Library/Logs/sunshine/sunshine.log";
+  #     StandardErrorPath = "${homeDir}/Library/Logs/sunshine/sunshine.err.log";
+  #   };
+  # };
+  # # homebrew sunshine
   # launchd.user.agents.sunshine = {
   #   command = "/opt/homebrew/opt/sunshine/bin/sunshine";
   #

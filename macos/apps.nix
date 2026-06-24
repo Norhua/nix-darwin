@@ -38,6 +38,8 @@
     diffutils
     gnupatch
     ripgrep
+    delve # go language debugger
+    p7zip
     tree
     tmux
     wget
@@ -106,6 +108,7 @@
     ];
     brews = [
       "laishulu/homebrew/macism" # im-select 的依赖，用于切换输入法
+      "cliproxyapi"
       # "anomalyco/tap/opencode"
       # "aria2"  # 下载工具
     ];
@@ -119,10 +122,11 @@
 
       "visual-studio-code"
       "google-chrome"
-      # "antigravity"
+      "antigravity"
       "localsend"
       "moonlight"
       "codex-app"
+      "cc-switch"
       "inkscape"
       "termius"
       "pixpin"
